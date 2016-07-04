@@ -1,0 +1,22 @@
+#system
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# dependency
+node_modules
+bower_components
+
+# log
+*.log
+npm-debug.log*
+
+# cache
+
+# project config
+.idea
+.jsconfig
+.settings
+.vscode
+*.sublime-project
+*.sublime-workspace
