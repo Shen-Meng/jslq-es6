@@ -11,7 +11,7 @@ gulp.task('less', function(){
 
 gulp.task('serve', ['less'],function(){
   browserSync.init({
-    server: '../app/'
+    server: './'
   });
 
   gulp.watch("less/*.less", ['less']);
