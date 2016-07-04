@@ -1,0 +1,16 @@
+h1 {
+  display: block;
+  width: 300px;
+  height: 40px;
+  background: red;
+}
+ul {
+  list-style: none;
+}
+ul li:nth-child(2) span {
+  background: green;
+}
+ul li.last {
+  font-size: 36px;
+  color: yellow;
+}
