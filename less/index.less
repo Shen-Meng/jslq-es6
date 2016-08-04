@@ -1,20 +1,52 @@
+p
 h1 {
   display: block;
   width: 300px;
   height: 40px;
   background: red;
 }
-ul {
-  list-style: none;
+ul.main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: flow;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  width: 500px;
+  border: 1px solid blue;
+  height: 50px;
+  padding: 0;
   li {
-    &:nth-child(2) {
-      span {
-        background: green;
-      }
+    list-style: none;
+    background: black;
+    flex-basis: 40px;
+    color: #fff;
+    text-align: center;
+    &:nth-child(1) {
+      height: 10px;
     }
-    &.last {
-      font-size: 36px;
-      color: yellow;
+    &:nth-child(2) {
+      height: 20px;
+      flex-grow: 2
+    }
+    &:nth-child(3) {
+      height: 30px;
+    }
+    &:nth-child(4) {
+      height: 40px;
+    }
+    &:nth-child(5) {
+      height: 50px;
     }
   }
+}
+.banner {
+    position: relative;
+    overflow: auto;
+    ul {
+        li {
+            float: left;
+            list-style: none;
+        }
+    }
 }

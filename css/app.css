@@ -1,16 +1,49 @@
-h1 {
+p h1 {
   display: block;
   width: 300px;
   height: 40px;
   background: red;
 }
-ul {
+ul.main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: flow;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  width: 500px;
+  border: 1px solid blue;
+  height: 50px;
+  padding: 0;
+}
+ul.main li {
   list-style: none;
+  background: black;
+  flex-basis: 40px;
+  color: #fff;
+  text-align: center;
 }
-ul li:nth-child(2) span {
-  background: green;
+ul.main li:nth-child(1) {
+  height: 10px;
 }
-ul li.last {
-  font-size: 36px;
-  color: yellow;
+ul.main li:nth-child(2) {
+  height: 20px;
+  flex-grow: 2;
+}
+ul.main li:nth-child(3) {
+  height: 30px;
+}
+ul.main li:nth-child(4) {
+  height: 40px;
+}
+ul.main li:nth-child(5) {
+  height: 50px;
+}
+.banner {
+  position: relative;
+  overflow: auto;
+}
+.banner ul li {
+  float: left;
+  list-style: none;
 }
