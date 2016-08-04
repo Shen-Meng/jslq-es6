@@ -17,7 +17,8 @@ gulp.task('es6', function() {
     .pipe($.babel({
         presets: ['es2015']
     }))
-    .pipe(gulp.dest('js/lib/'));
+    .pipe(gulp.dest('js/lib/'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('less', function(){

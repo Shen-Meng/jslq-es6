@@ -1,8 +1,8 @@
 "use strict";
 
-var a = 1;
+var a = "has";
 var b = 2;
 var c = 3;
 
 
-console.log(a);
+console.log(b);
